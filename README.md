@@ -49,7 +49,7 @@ if __name__ == '__main__':
     app.run()
 ```
 
-In a typical project we add a file called requirements.txt and fill in the required packages so that we do not have to install seperately. Here we need flask and Zappa (which we have already installed), and we add these two lines into the requirements file.
+In a typical project we add a file called requirements.txt and fill in the required packages so that we do not have to install seperetely. Here we need flask and Zappa (which we have already installed), and we add these two lines into the requirements file.
 
     # cat requirements.txt
     flask
@@ -62,7 +62,7 @@ Once you have listed out the requirements. Install them using pip, its package m
 Finally, we can fire up our local debug server and test our simple web application.
 
     # export and run application
-    $ export FLASK_APP=hello_world.py
+    $ export FLASK_APP=app.py
     $ flask run
 
 You can reach it by opening the url http://127.0.0.1:5000/ in your browser.
