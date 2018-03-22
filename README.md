@@ -11,6 +11,7 @@ run the following commands;
     # install python
     $ brew update
     $ brew install python3
+
 ## Setup the project and create the web application
 Now setup a new project and create a trivial web application using Flask.
 First, we have to execute some shell commands to create our new project.
@@ -47,6 +48,16 @@ def index():
 if __name__ == '__main__':
     app.run()
 ```
+
+In a typical project we add a file called requirements.txt and fill in the required packages so that we do not have to install seperately. Here we need flask and Zappa (which we have already installed), and we add these two lines into the requirements file.
+
+    # cat requirements.txt
+    flask
+    zappa
+
+Once you have listed out the requirements. Install them using pip, its package manager used extensively to install python libraries and frameworks.
+
+    $ pip install -r requirements.txt
 
 Finally, we can fire up our local debug server and test our simple web application.
 
